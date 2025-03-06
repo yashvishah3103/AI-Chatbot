@@ -1,5 +1,5 @@
 
-#AI Chatbot with Streamlit & OpenAI
+# AI Chatbot with Streamlit & OpenAI
 
 An interactive AI-powered chatbot built using Streamlit, LangChain, and OpenAI. The chatbot supports real-time streaming responses and maintains chat history for a seamless user experience.
 
