@@ -1,0 +1,111 @@
+
+/* Chat container */
+.chat-container {
+    max-width: 700px;
+    height: 400px;  /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f4f4f4; /* Light grey background */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat history section */
+.chat-history {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom scrollbar */
+.chat-history::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chat-history::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 10px;
+}
+
+/* User chat bubble (Right-aligned, WhatsApp Green) */
+.chat-bubble-user {
+    background-color: #2766ec; 
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+    text-align: right;
+    max-width: 75%;
+    margin-left: auto;
+    word-wrap: break-word;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+/* Assistant chat bubble (Left-aligned, WhatsApp Gray) */
+.chat-bubble-ai {
+    background-color: #EAEAEA; /* Light grey for AI */
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+    text-align: left;
+    max-width: 75%;
+    margin-right: auto;
+    word-wrap: break-word;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+/* Timestamp style */
+.timestamp {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
+}
+
+/* Chat input field */
+.stTextArea textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+    resize: none;
+}
+
+
+/* Chat header */
+
+/* Move AI Chatbot title to the top left */
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 95%;
+        height: 90vh;
+    }
+
+    .chat-bubble-user,
+    .chat-bubble-ai {
+        max-width: 90%;
+        font-size: 14px;
+    }
+
+    .stTextArea textarea {
+        font-size: 14px;
+    }
+
+    .stButton>button {
+        font-size: 14px;
+    }
+
+    .chat-header {
+        font-size: 18px;
+    }
+}

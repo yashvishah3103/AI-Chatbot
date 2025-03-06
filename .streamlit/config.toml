@@ -1,0 +1,7 @@
+[theme]
+base = "light"  # Use "dark" for dark mode
+primaryColor = "#1E90FF"  # DodgerBlue for buttons, highlights
+backgroundColor = "#E3F2FD"  # Light blue background
+secondaryBackgroundColor = "#BBDEFB"  # Sidebar & widget background (lighter blue)
+textColor = "#0D47A1"  # Dark blue text
+font = "sans serif"  # Change to "serif" or "monospace" if needed
